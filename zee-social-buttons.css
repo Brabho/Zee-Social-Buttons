@@ -1,0 +1,80 @@
+/*
+ * Zee Social Buttons
+ * Version: 2.0
+ * Develop By ClubCoding
+ * Download/Clone: 
+ */
+.zee-social-buttons{
+    width: 100%;
+    display: block;
+    clear: both;
+    font-size: 0;
+    margin: auto;
+    visibility: hidden;
+}
+
+.zee_social_sbutton{    
+    list-style: none;
+    display: inline-block;
+    height: 32px;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+.zee-social-buttons,
+.zee_social_sbutton{
+    margin: 0;
+    padding: 0;
+}
+
+.zee_social_sbutton:hover{
+    opacity: 0.8;
+}
+
+/* 
+ * All Social Icons ---------------------
+ */
+.zee_sbtn_facebook{
+    background-color: #3a589b;
+    background-position: 0 3px;
+}
+
+.zee_sbtn_twitter{
+    background-color: #55acee;
+    background-position: 1px -33px;
+}
+
+.zee_sbtn_googleplus{
+    background-color: #ca4738;
+    background-position: 0 -64px;
+}
+
+.zee_sbtn_linkedin{
+    background-color: #346da6;
+    background-position: 1px -92px;
+}
+
+.zee_sbtn_pinterest{
+    background-color: #ca2127;
+    background-position: 0 -123px;
+}
+
+.zee_sbtn_stumbleupon{
+    background-color: #ed5836;
+    background-position: -1px -155px;
+}
+
+.zee_sbtn_buffer{
+    background-color: #434343;
+    background-position: 0 -188px;
+}
+
+.zee_sbtn_reddit{
+    background-color: #ff5212;
+    background-position: -1px -220px;
+}
+
+.zee_sbtn_pocket{
+    background-color: #ee4055;
+    background-position: 2px -249px;
+}
