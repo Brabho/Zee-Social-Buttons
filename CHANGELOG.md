@@ -1,5 +1,10 @@
 # Change Log & History
 
+#### 15-11-2016
+    Stable Version 2.1
+    Changed `ul li` tag to `div` tag // All Single Buttons
+    Stability Improved
+
 #### 11-11-2016
     Initial Version 2.0
     Added:

@@ -6,7 +6,7 @@ Social Share Buttons
 LightWeight, Cross Browser & Cross Platform
 
 ### Version 
-Initial Version 2.0
+Stable Version 2.1
 
 ### License
 (C) 2015 - 2016

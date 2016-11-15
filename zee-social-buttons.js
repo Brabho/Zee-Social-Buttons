@@ -1,8 +1,8 @@
 /*
  * Zee Social Buttons
- * Version: 2.0
+ * Version: 2.1
  * Develop By ClubCoding
- * Download/Clone: 
+ * Download/Clone: https://github.com/krishnaTORQUE/Zee-Social-Buttons
  */
 window.addEventListener('load', function () {
 
@@ -13,32 +13,31 @@ window.addEventListener('load', function () {
      */
 
     var zee_social_buttons_share_details = {
-        url: window.location.href,
         url_en: encodeURI(window.location.href),
         title: document.getElementsByTagName('title')[0].textContent,
         title_en: encodeURI(document.getElementsByTagName('title')[0].textContent)
     };
 
     /*
-     * All Button Elements
+     * All Button Elements & Contents
      */
 
     var zee_social_buttons_elms = {
-        facebook: '<li class="zee_social_sbutton zee_sbtn_facebook" title="Facebook"></li>',
-        twitter: '<li class="zee_social_sbutton zee_sbtn_twitter" title="Twitter"></li>',
-        googleplus: '<li class="zee_social_sbutton zee_sbtn_googleplus" title="Google+"></li>',
-        linkedin: '<li class="zee_social_sbutton zee_sbtn_linkedin" title="LinkedIn"></li>',
-        pinterest: '<li class="zee_social_sbutton zee_sbtn_pinterest" title="Pinterest"></li>',
-        stumbleupon: '<li class="zee_social_sbutton zee_sbtn_stumbleupon" title="Stumbleupon"></li>',
-        buffer: '<li class="zee_social_sbutton zee_sbtn_buffer" title="Buffer"></li>',
-        reddit: '<li class="zee_social_sbutton zee_sbtn_reddit" title="Reddit"></li>',
-        pocket: '<li class="zee_social_sbutton zee_sbtn_pocket" title="Pocket"></li>'
+        facebook: '<div class="zee_social_sbutton zee_sbtn_facebook" title="Facebook"></div>',
+        twitter: '<div class="zee_social_sbutton zee_sbtn_twitter" title="Twitter"></div>',
+        googleplus: '<div class="zee_social_sbutton zee_sbtn_googleplus" title="Google+"></div>',
+        linkedin: '<div class="zee_social_sbutton zee_sbtn_linkedin" title="LinkedIn"></div>',
+        pinterest: '<div class="zee_social_sbutton zee_sbtn_pinterest" title="Pinterest"></div>',
+        stumbleupon: '<div class="zee_social_sbutton zee_sbtn_stumbleupon" title="Stumbleupon"></div>',
+        buffer: '<div class="zee_social_sbutton zee_sbtn_buffer" title="Buffer"></div>',
+        reddit: '<div class="zee_social_sbutton zee_sbtn_reddit" title="Reddit"></div>',
+        pocket: '<div class="zee_social_sbutton zee_sbtn_pocket" title="Pocket"></div>'
     };
 
     var zee_social_buttons = document.getElementsByClassName('zee-social-buttons');
     for (var i = 0; i < zee_social_buttons.length; i++) {
 
-        var total_social_buttons, zee_social_buttons_content = '<ul>';
+        var total_social_buttons, zee_social_buttons_content = '';
 
         /*
          * Loading giving buttons
@@ -51,7 +50,7 @@ window.addEventListener('load', function () {
             total_social_buttons = load_social_buttons.length;
 
             /*
-             * Adding button contents
+             * Add giving button contents
              */
 
             for (var j = 0; j < total_social_buttons; j++) {
@@ -63,7 +62,7 @@ window.addEventListener('load', function () {
         } else {
 
             /*
-             * If no giving buttons 
+             * If not giving buttons 
              * Adding all button contents
              */
 
@@ -75,13 +74,16 @@ window.addEventListener('load', function () {
 
         }
 
-        zee_social_buttons_content += '</ul>';
-
         /*
-         * Initial Toggle Button
+         * Calculaion Width
          */
 
-        total_social_buttons = Math.round(100 / total_social_buttons);
+        total_social_buttons = (100 / total_social_buttons);
+
+        /*
+         * Put Contents in Body
+         */
+
         zee_social_buttons[i].innerHTML = zee_social_buttons_content;
 
         /*
@@ -99,7 +101,7 @@ window.addEventListener('load', function () {
              * Set the image and width
              */
 
-            zee_social_sbutton[k].style.backgroundImage = "url(" + zee_social_button_img + ")";
+            zee_social_sbutton[k].style.backgroundImage = 'url("' + zee_social_button_img + '")';
             zee_social_sbutton[k].style.width = total_social_buttons + '%';
 
             /*
@@ -150,7 +152,6 @@ window.addEventListener('load', function () {
                     case 'Pocket':
                         social_buttons_link = 'https://getpocket.com/save?url=' + zee_social_buttons_share_details['url_en'] + '&title=' + zee_social_buttons_share_details['title'];
                         break;
-
                 }
 
                 if (social_buttons_link !== null) {
