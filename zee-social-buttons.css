@@ -1,6 +1,6 @@
 /*
  * Zee Social Buttons
- * Version: 2.1
+ * Version: 2.5
  * Develop By ClubCoding
  * Download/Clone: https://github.com/krishnaTORQUE/Zee-Social-Buttons
  */
@@ -22,6 +22,14 @@
     background-repeat: no-repeat;
     cursor: pointer;
     transition: opacity 0.3s;
+}
+
+.zee-social-buttons .zee_social_sbutton:first-child{
+    border-radius: 4px 0 0 4px;
+}
+
+.zee-social-buttons .zee_social_sbutton:last-child{
+    border-radius: 0 4px 4px 0;
 }
 
 .zee-social-buttons .zee_social_sbutton:hover{
@@ -74,4 +82,9 @@
 .zee-social-buttons .zee_sbtn_pocket{
     background-color: #ee4055;
     background-position: 2px -249px;
+}
+
+.zee-social-buttons .zee_sbtn_email{
+    background-color: #389B31;
+    background-position: 2px -274px;
 }

@@ -1,6 +1,6 @@
 /*
  * Zee Social Buttons
- * Version: 2.1
+ * Version: 2.5
  * Develop By ClubCoding
  * Download/Clone: https://github.com/krishnaTORQUE/Zee-Social-Buttons
  */
@@ -31,7 +31,8 @@ window.addEventListener('load', function () {
         stumbleupon: '<div class="zee_social_sbutton zee_sbtn_stumbleupon" title="Stumbleupon"></div>',
         buffer: '<div class="zee_social_sbutton zee_sbtn_buffer" title="Buffer"></div>',
         reddit: '<div class="zee_social_sbutton zee_sbtn_reddit" title="Reddit"></div>',
-        pocket: '<div class="zee_social_sbutton zee_sbtn_pocket" title="Pocket"></div>'
+        pocket: '<div class="zee_social_sbutton zee_sbtn_pocket" title="Pocket"></div>',
+        email: '<div class="zee_social_sbutton zee_sbtn_email" title="Email"></div>',
     };
 
     var zee_social_buttons = document.getElementsByClassName('zee-social-buttons');
@@ -151,6 +152,10 @@ window.addEventListener('load', function () {
 
                     case 'Pocket':
                         social_buttons_link = 'https://getpocket.com/save?url=' + zee_social_buttons_share_details['url_en'] + '&title=' + zee_social_buttons_share_details['title'];
+                        break;
+
+                    case 'Email':
+                        social_buttons_link = 'mailto:?subject=' + zee_social_buttons_share_details['title_en'] + '&body=Check this out: ' + zee_social_buttons_share_details['url_en'];
                         break;
                 }
 

@@ -1,5 +1,10 @@
 # Change Log & History
 
+#### 22-11-2016
+    Stable Version 2.5
+    Stability Improved
+    Email Button Added
+
 #### 15-11-2016
     Stable Version 2.1
     Changed `ul li` tag to `div` tag // All Single Buttons
