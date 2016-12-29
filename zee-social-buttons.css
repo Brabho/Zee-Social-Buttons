@@ -1,6 +1,6 @@
 /*
  * Zee Social Buttons
- * Version: 2.5
+ * Version: 2.8
  * Develop By ClubCoding
  * Download/Clone: https://github.com/krishnaTORQUE/Zee-Social-Buttons
  */
@@ -12,6 +12,7 @@
     padding: 0;
     height: 32px;
     visibility: hidden;
+    font-family: Tahoma, Helvetica, Arial, sans-serif;
 }
 
 .zee-social-buttons .zee_social_sbutton{
@@ -24,16 +25,21 @@
     transition: opacity 0.3s;
 }
 
-.zee-social-buttons .zee_social_sbutton:first-child{
+.zee-social-buttons .zee_social_sbutton:hover{
+    opacity: 0.7;
+}
+
+.zee-social-buttons .zee_social_sbutton:first-child:hover{
+    opacity: 1;
+    cursor: default;
+}
+
+.zee-social-buttons .zee_social_sbutton:nth-child(2){
     border-radius: 4px 0 0 4px;
 }
 
 .zee-social-buttons .zee_social_sbutton:last-child{
     border-radius: 0 4px 4px 0;
-}
-
-.zee-social-buttons .zee_social_sbutton:hover{
-    opacity: 0.7;
 }
 
 /* 
@@ -81,10 +87,23 @@
 
 .zee-social-buttons .zee_sbtn_pocket{
     background-color: #ee4055;
-    background-position: 2px -249px;
+    background-position: 2px -247px;
+}
+
+.zee-social-buttons .zee_sbtn_whatsapp{
+    background-color: #27C1A9;
+    background-position: 2px -278px;
 }
 
 .zee-social-buttons .zee_sbtn_email{
     background-color: #389B31;
-    background-position: 2px -274px;
+    background-position: 2px -313px;
+}
+
+.zee-social-buttons .zee_sbtn_count{
+    background-position: 2px -341px;
+    color: #000;
+    text-align: right;
+    font-weight: bold;
+    font-size: 11px;
 }

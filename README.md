@@ -6,7 +6,7 @@ Social Share Buttons
 LightWeight, Responsive, Cross Browser & Cross Platform
 
 ### Version 
-Stable Version 2.5
+Stable Version 2.8
 
 ### License
 (C) 2015 - 2016
@@ -34,9 +34,9 @@ under GNU General Public License Version 2.
 <!-- Forth -->
 <div class="zee-social-buttons" data-social-buttons="buffer,twitter,googleplus"></div>
 
-<!-- data-social-buttons = facebook,twitter,googleplus,linkedin,pinterest,stumbleupon,buffer,reddit,pocket,email
+<!-- data-social-buttons = facebook,twitter,googleplus,linkedin,pinterest,stumbleupon,buffer,reddit,pocket,whatsapp,email
 * Default > All
 * Everytime require
-* Short it > buffer,twitter,googleplus
+* Short it > whatsapp,twitter,googleplus
 -->
 ```

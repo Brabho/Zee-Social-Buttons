@@ -1,5 +1,16 @@
 # Change Log & History
 
+#### 29-12-2016
+    Stable Version 2.8
+
+    Improved:
+        Stability
+        Responsive
+
+    Added:
+        Share Count
+        WhatsApp Button
+
 #### 22-11-2016
     Stable Version 2.5
     Stability Improved
