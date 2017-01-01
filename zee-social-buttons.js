@@ -1,6 +1,6 @@
 /*
  * Zee Social Buttons
- * Version: 2.8
+ * Version: 2.8.3
  * Develop By ClubCoding
  * Download/Clone: https://github.com/krishnaTORQUE/Zee-Social-Buttons
  */
@@ -13,6 +13,7 @@ function zee_social_buttons() {
      */
 
     var zee_social_buttons_share_details = {
+        url: window.location.href,
         url_en: encodeURI(window.location.href),
         title: document.getElementsByTagName('title')[0].textContent,
         title_en: encodeURI(document.getElementsByTagName('title')[0].textContent)
@@ -177,7 +178,7 @@ function zee_social_buttons() {
          */
 
         var theCount = [];
-        var getCountLink = 'http://public.newsharecounts.com/count.json?url=' + zee_social_buttons_share_details['url_en'] + '&providers=facebook,twitter,google,linkedin,pinterest,stumbleupon,buffer,pocket&format=jsonp';
+        var getCountLink = 'https://count.donreach.com/?url=' + zee_social_buttons_share_details['url'] + '&providers=facebook,twitter,google,linkedin,pinterest,stumbleupon,buffer,pocket&format=jsonp';
         var xhttp = new XMLHttpRequest();
         xhttp.onreadystatechange = function () {
             if (this.readyState === 4 && this.status === 200) {
@@ -188,25 +189,25 @@ function zee_social_buttons() {
         xhttp.send();
 
         /*
-         * Showing Total Count
-         */
-
-        setTimeout(function () {
-            if (theCount['count'] !== 'undefined') {
-                var zee_sbtn_count = document.getElementsByClassName('zee_sbtn_count');
-                for (var l = 0; l < zee_sbtn_count.length; l++) {
-                    zee_sbtn_count[l].innerHTML = theCount['count'] + '&emsp;';
-                }
-            } else {
-                zee_sbtn_count[l].innerHTML = '0&emsp;';
-            }
-        }, 1500);
-
-        /*
          * Final Render Social Buttons
          */
 
         zee_social_buttons[i].style.visibility = 'visible';
+
+        /*
+         * Showing Total Count
+         */
+
+        setTimeout(function () {
+            var zee_sbtn_count = document.getElementsByClassName('zee_sbtn_count');
+            for (var l = 0; l < zee_sbtn_count.length; l++) {
+                if (theCount['total'] === 'undefined' || theCount['total'] === undefined) {
+                    zee_sbtn_count[l].innerHTML = '0&emsp;';
+                } else {
+                    zee_sbtn_count[l].innerHTML = theCount['total'] + '&emsp;';
+                }
+            }
+        }, 1500);
 
     }
 }

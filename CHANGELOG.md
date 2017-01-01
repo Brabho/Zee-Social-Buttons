@@ -1,5 +1,11 @@
 # Change Log & History
 
+#### 01-01-2017
+    Stable Version 2.8.3
+    Stability Improved
+    Minor Bugs Fixed
+    API Update
+
 #### 29-12-2016
     Stable Version 2.8
 
