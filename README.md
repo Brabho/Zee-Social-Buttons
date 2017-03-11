@@ -1,19 +1,18 @@
 # Zee Social Buttons
 
 ### Description
-Social Share Buttons
+Social Share Buttons and Counts
 
 LightWeight, Responsive, Cross Browser & Cross Platform
 
 ### Version 
-Stable Version 2.8.3
+Stable Version 2.8.6
 
 ### License
-(C) 2015 - 2016
-under GNU General Public License Version 2.
+(C) 2015 - 2017 under GNU General Public License Version 2.
 
 ### ScreenShot
-![Alt text](SCREENSHOT.png?raw=true "ScreenShot")
+![ScreenShot](SCREENSHOT.png?raw=true "ScreenShot")
 
 ### Example
 ```html

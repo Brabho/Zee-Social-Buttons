@@ -1,8 +1,8 @@
 /*
  * Zee Social Buttons
- * Version: 2.8.3
- * Develop By ClubCoding
- * Download/Clone: https://github.com/krishnaTORQUE/Zee-Social-Buttons
+ * Version: 2.8.6
+ * License: (C) 2015 - 2017 under GNU General Public License Version 2.
+ * Download/Clone: https://github.com/Brabho/Zee-Social-Buttons
  */
 function zee_social_buttons() {
 
@@ -14,7 +14,7 @@ function zee_social_buttons() {
 
     var zee_social_buttons_share_details = {
         url: window.location.href,
-        url_en: encodeURI(window.location.href),
+        url_en: encodeURIComponent(window.location.href),
         title: document.getElementsByTagName('title')[0].textContent,
         title_en: encodeURI(document.getElementsByTagName('title')[0].textContent)
     };
